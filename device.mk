@@ -29,6 +29,9 @@ PRODUCT_AAPT_PREBUILT_DPI := hdpi mdpi
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
+# Soong
+PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
 # Inherit from universal3475-common
 $(call inherit-product, device/samsung/universal3475-common/device-common.mk)
 
