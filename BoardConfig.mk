@@ -32,7 +32,7 @@ TARGET_SCREEN_WIDTH := 540
 TARGET_SCREEN_DENSITY := 220
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_j2lte
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_j2lte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage-j2lte_defconfig
