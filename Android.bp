@@ -1,2 +1,7 @@
 soong_namespace {
+    imports: ["device/samsung/universal3475-common"],
 }
+
+subdirs = [
+    "init",
+]
