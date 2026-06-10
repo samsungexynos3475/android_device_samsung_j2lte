@@ -20,7 +20,6 @@
     <bool name="config_proximityCheckOnWakeEnabledByDefault">false</bool>
 
     <!-- Disable LiveDisplay -->
-    <integer name="config_defaultLiveDisplayMode">0</integer>
     <bool name="config_enableLiveDisplay">false</bool>
 
     <string-array name="config_externalLineageServices">
