@@ -18,7 +18,7 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BTM_DEF_LOCAL_NAME   "Samsung Galaxy J2"
+#define BTM_DEF_LOCAL_NAME   "Galaxy J2"
 
 /* Inherit from universal3475-common */
 #include "../../universal3475-common/configs/bluetooth/bdroid_buildcfg.h"
