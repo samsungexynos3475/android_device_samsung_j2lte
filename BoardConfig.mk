@@ -32,3 +32,6 @@ TARGET_INIT_VENDOR_LIB := libinit_j2lte
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage-j2lte_defconfig
+
+# Manifest
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
