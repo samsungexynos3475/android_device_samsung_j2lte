@@ -38,10 +38,6 @@ PRODUCT_AAPT_PREF_CONFIG := hdpi
 # A list of dpis to select prebuilt apk, in precedence order.
 PRODUCT_AAPT_PREBUILT_DPI := hdpi xhdpi mdpi
 
-# HIDL Manifest
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/manifest.xml
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
