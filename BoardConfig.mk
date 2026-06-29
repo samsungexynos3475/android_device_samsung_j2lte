@@ -38,6 +38,9 @@ BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_j2lte
 
+# Properties
+TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
+
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false
 TARGET_USERIMAGES_USE_EXT4 := true
