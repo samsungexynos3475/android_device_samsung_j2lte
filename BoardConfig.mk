@@ -17,12 +17,12 @@
 # Inherit from universal3475-common
 include device/samsung/universal3475-common/BoardConfigCommon.mk
 
-LOCAL_PATH := device/samsung/j2lte
+DEVICE_PATH := device/samsung/j2lte
 
 TARGET_OTA_ASSERT_DEVICE := j2lte,j2ltedd,j2ltedx
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 
 # Display
 TARGET_SCREEN_DENSITY := 240
@@ -39,7 +39,7 @@ BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
 TARGET_INIT_VENDOR_LIB := libinit_j2lte
 
 # Properties
-TARGET_SYSTEM_PROP += $(LOCAL_PATH)/system.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false

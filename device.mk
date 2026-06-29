@@ -14,14 +14,14 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := device/samsung/j2lte
+DEVICE_PATH := device/samsung/j2lte
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_0.xml \
-    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+    $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_0.xml \
+    $(DEVICE_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 PRODUCT_PACKAGES += \
     audio.primary.universal3475 \
@@ -40,7 +40,7 @@ TARGET_SCREEN_WIDTH := 540
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
+    $(DEVICE_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-service
@@ -59,12 +59,12 @@ PRODUCT_AAPT_PREBUILT_DPI := hdpi xhdpi mdpi
 
 # HIDL Manifest
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/manifest.xml
+    $(DEVICE_PATH)/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/manifest.xml
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/gpio_keys.kl:system/usr/keylayout/gpio_keys.kl \
-    $(LOCAL_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
+    $(DEVICE_PATH)/keylayout/gpio_keys.kl:system/usr/keylayout/gpio_keys.kl \
+    $(DEVICE_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
 
 # Touch features
 PRODUCT_PACKAGES += \
@@ -103,7 +103,7 @@ PRODUCT_COPY_FILES += \
     device/samsung/universal3475-common/configs/init/rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rild.legacy.rc
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # Vendor security patch level (vendor blobs from G550FYXXU1CRF1)
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -111,10 +111,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Wi-fi
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/wifi/cred.conf:system/etc/wifi/cred.conf \
-    $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wifi/filter_ie:system/etc/wifi/filter_ie
+    $(DEVICE_PATH)/configs/wifi/cred.conf:system/etc/wifi/cred.conf \
+    $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
+    $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
+    $(DEVICE_PATH)/configs/wifi/filter_ie:system/etc/wifi/filter_ie
 
 # Inherit from universal3475-common
 $(call inherit-product, device/samsung/universal3475-common/device-common.mk)
