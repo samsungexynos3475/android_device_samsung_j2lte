@@ -30,9 +30,6 @@ TARGET_SCREEN_DENSITY := 240
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_j2lte
 
-# Properties
-TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
-
 # Partitions
 BOARD_HAS_NO_MISC_PARTITION:= false
 TARGET_USERIMAGES_USE_EXT4 := true
