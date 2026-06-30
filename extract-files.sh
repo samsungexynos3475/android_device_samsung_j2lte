@@ -62,14 +62,9 @@ fi
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
-        "${KANG}" --section "${SECTION}"
+extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 # Fix proprietary blobs
 BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
-patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-fl26.so $BLOB_ROOT/lib/libsec-ril.so
-patchelf --replace-needed libprotobuf-cpp-full.so libprotobuf-cpp-fl26.so $BLOB_ROOT/lib/libsec-ril-dsds.so
-(perl -pi -e "s/\/system\/bin\/gpsd/\/vendor\/bin\/gpsd/g" $BLOB_ROOT/lib/libsec-ril.so)
-(perl -pi -e "s/\/system\/bin\/gpsd/\/vendor\/bin\/gpsd/g" $BLOB_ROOT/lib/libsec-ril-dsds.so)
 
 "${MY_DIR}/setup-makefiles.sh"
