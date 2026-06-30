@@ -27,14 +27,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 # Display
 TARGET_SCREEN_DENSITY := 240
 
-# Network Routing
-TARGET_NEEDS_NETD_DIRECT_CONNECT_RULE := true
-
-# RIL
-BOARD_MODEM_TYPE := tss310
-BOARD_PROVIDES_LIBRIL := true
-BOARD_NEEDS_ROAMING_PROTOCOL_FIELD := true
-
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_j2lte
 
@@ -54,13 +46,3 @@ BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Kernel
 TARGET_KERNEL_CONFIG := lineage-j2lte_defconfig
-
-# Shim
-TARGET_LD_SHIM_LIBS += \
-    /system/lib/libcamera_client.so|/vendor/lib/libcamera_client_shim.so \
-    /system/lib/libstagefright.so|/system/lib/libstagefright_shim.so \
-    /system/lib/libexynoscamera.so|/vendor/lib/libexynoscamera_shim.so
-
-# Legacy BLOB Support
-TARGET_PROCESS_SDK_VERSION_OVERRIDE += \
-    /system/vendor/bin/hw/rild=27
