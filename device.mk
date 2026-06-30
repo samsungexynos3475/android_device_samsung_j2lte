@@ -50,13 +50,6 @@ PRODUCT_COPY_FILES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
-# Wi-fi
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/configs/wifi/cred.conf:system/etc/wifi/cred.conf \
-    $(DEVICE_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
-    $(DEVICE_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    $(DEVICE_PATH)/configs/wifi/filter_ie:system/etc/wifi/filter_ie
-
 # Inherit from universal3475-common
 $(call inherit-product, device/samsung/universal3475-common/device-common.mk)
 
