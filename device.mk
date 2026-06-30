@@ -42,11 +42,6 @@ PRODUCT_AAPT_PREBUILT_DPI := hdpi xhdpi mdpi
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/manifest.xml:$(TARGET_COPY_OUT_VENDOR)/manifest.xml
 
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    $(DEVICE_PATH)/keylayout/gpio_keys.kl:system/usr/keylayout/gpio_keys.kl \
-    $(DEVICE_PATH)/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
