@@ -227,32 +227,32 @@
 
 	<!-- Output stage -->
 	<!-- media playback -->
-	<path name="media-handset">
+	<path name="earpiece">
 		<path name="route-ap-tx" />
 		<path name="dev-handset" />
 		<ctl name="Chargepump Mode" value="HALF-VDD" />
 	</path>
 
-	<path name="media-speaker">
+	<path name="speaker">
 		<path name="route-ap-tx" />
 		<path name="dev-speaker" />
 	</path>
 
-	<path name="media-headset">
+	<path name="headphones">
 		<path name="route-ap-tx" />
 		<path name="dev-headset" />
 	</path>
 
 	<path name="media-headphone">
-		<path name="media-headset" />
+		<path name="headphones" />
 	</path>
 
-	<path name="media-speaker-headset">
+	<path name="speaker-and-headphones">
 		<path name="route-ap-tx" />
 		<path name="dev-speaker-headset" />
 	</path>
 
-	<path name="media-bt-sco-headset">
+	<path name="bt-sco-headset">
 		<path name="route-ap-bt" />
 		<path name="dev-bt-headset" />
 	</path>
@@ -264,23 +264,23 @@
 
 	<!-- Ringtone playback -->
 	<path name="ringtone-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="ringtone-speaker">
-		<path name="media-speaker" />
+		<path name="speaker" />
 	</path>
 
 	<path name="ringtone-headset">
-		<path name="media-headset" />
+		<path name="headphones" />
 	</path>
 
 	<path name="ringtone-speaker-headset">
-		<path name="media-speaker-headset" />
+		<path name="speaker-and-headphones" />
 	</path>
 
 	<path name="ringtone-bt-sco-headset">
-		<path name="media-bt-sco-headset" />
+		<path name="bt-sco-headset" />
 	</path>
 
 	<path name="ringtone-speaker-bt-sco-headset">
@@ -289,15 +289,15 @@
 
 	<!-- Communication playback -->
 	<path name="communication-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="communication-speaker">
-		<path name="media-speaker" />
+		<path name="speaker" />
 	</path>
 
 	<path name="communication-headset">
-		<path name="media-headset" />
+		<path name="headphones" />
 		<ctl name="Chargepump Mode" value="VDD" />
 		<ctl name="DNC Max Gain" value="6" />
 	</path>
@@ -309,12 +309,12 @@
 	</path>
 
 	<path name="communication-bt-sco-headset">
-		<path name="media-bt-sco-headset" />
+		<path name="bt-sco-headset" />
 	</path>
 
 	<!-- samsung voip playback -->
 	<path name="samsung_voip-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="samsung_voip-speaker">
@@ -330,12 +330,12 @@
 	</path>
 
 	<path name="samsung_voip-bt-sco-headset">
-		<path name="media-bt-sco-headset" />
+		<path name="bt-sco-headset" />
 	</path>
 
 	<!-- voip playback -->
 	<path name="voip-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="voip-speaker">
@@ -355,12 +355,12 @@
 	</path>
 
 	<path name="voip-bt-sco-headset">
-		<path name="media-bt-sco-headset" />
+		<path name="bt-sco-headset" />
 	</path>
 
 	<!-- Video call playback -->
 	<path name="video_call-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="video_call-speaker">
@@ -376,13 +376,13 @@
 	</path>
 
 	<path name="video_call-bt-sco-headset">
-		<path name="media-bt-sco-headset" />
+		<path name="bt-sco-headset" />
 	</path>
 
 	<!-- VoLTE AP playback -->
 	<!-- VoLTE AP NB -->
 	<path name="volte_vt_ap_nb-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="volte_vt_ap_nb-speaker">
@@ -398,12 +398,12 @@
 	</path>
 
 	<path name="volte_vt_ap_nb-bt-sco-headset">
-		<path name="media-bt-sco-headset" />
+		<path name="bt-sco-headset" />
 	</path>
 
 	<!-- VoLTE AP WB -->
 	<path name="volte_vt_ap_wb-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="volte_vt_ap_wb-speaker">
@@ -419,22 +419,22 @@
 	</path>
 
 	<path name="volte_vt_ap_wb-bt-sco-headset">
-		<path name="media-bt-sco-headset" />
+		<path name="bt-sco-headset" />
 	</path>
 
 	<!-- CP Call Output -->
 	<!-- NB -->
-	<path name="incall_nb-handset">
+	<path name="voice-earpiece">
 		<path name="route-cp" />
 		<path name="dev-handset" />
 	</path>
 
-	<path name="incall_nb-speaker">
+	<path name="voice-speaker">
 		<path name="route-cp" />
 		<path name="dev-speaker" />
 	</path>
 
-	<path name="incall_nb-headset">
+	<path name="voice-headphones">
 		<path name="route-cp" />
 		<path name="dev-headset" />
 		<ctl name="Chargepump Mode" value="VDD" />
@@ -442,54 +442,54 @@
 	</path>
 
 	<path name="incall_nb-headphone">
-		<path name="incall_nb-headset" />
+		<path name="voice-headphones" />
 		<ctl name="Chargepump Mode" value="VDD" />
 		<ctl name="DNC Max Gain" value="6" />
 	</path>
 
-	<path name="incall_nb-bt-sco-headset">
+	<path name="voice-bt-sco-headset">
 		<path name="route-cp-bt" />
 		<path name="dev-bt-headset" />
 	</path>
 
 	<!-- NB/HANDOVER -->
 	<path name="incall_nb_handover-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="incall_nb_handover-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<!-- NB/EXTRA_VOL -->
 	<path name="incall_nb_extra_vol-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="incall_nb_extra_vol-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<!-- NB/EXTRA_VOL/HANDOVER -->
 	<path name="incall_nb_extra_vol_handover-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="incall_nb_extra_vol_handover-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<!-- WB -->
 	<path name="incall_wb-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="incall_wb-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<path name="incall_wb-headset">
-		<path name="incall_nb-headset" />
+		<path name="voice-headphones" />
 		<ctl name="Chargepump Mode" value="VDD" />
 		<ctl name="DNC Max Gain" value="6" />
 	</path>
@@ -501,7 +501,7 @@
 	</path>
 
 	<path name="incall_wb-bt-sco-headset">
-		<path name="incall_nb-bt-sco-headset" />
+		<path name="voice-bt-sco-headset" />
 	</path>
 
 	<!-- WB/EXTRA_VOL -->
@@ -516,15 +516,15 @@
 	<!-- VoLTE CP playback -->
 	<!-- VoLTE CP NB -->
 	<path name="volte_cp_nb-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="volte_cp_nb-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<path name="volte_cp_nb-headset">
-		<path name="incall_nb-headset" />
+		<path name="voice-headphones" />
 		<ctl name="Chargepump Mode" value="VDD" />
 		<ctl name="DNC Max Gain" value="6" />
 	</path>
@@ -536,47 +536,47 @@
 	</path>
 
 	<path name="volte_cp_nb-bt-sco-headset">
-		<path name="incall_nb-bt-sco-headset" />
+		<path name="voice-bt-sco-headset" />
 	</path>
 
 	<!-- VoLTE CP NB/HANDOVER -->
 	<path name="volte_cp_nb_handover-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="volte_cp_nb_handover-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<!-- VoLTE CP NB/EXTRA_VOL -->
 	<path name="volte_cp_nb_extra_vol-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="volte_cp_nb_extra_vol-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<!-- VoLTE CP NB/EXTRA_VOL/HANDOVER -->
 	<path name="volte_cp_nb_extra_vol_handover-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="volte_cp_nb_extra_vol_handover-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<!-- VoLTE VT CP NB -->
 	<path name="volte_vt_cp_nb-handset">
-		<path name="incall_nb-handset" />
+		<path name="voice-earpiece" />
 	</path>
 
 	<path name="volte_vt_cp_nb-speaker">
-		<path name="incall_nb-speaker" />
+		<path name="voice-speaker" />
 	</path>
 
 	<path name="volte_vt_cp_nb-headset">
-		<path name="incall_nb-headset" />
+		<path name="voice-headphones" />
 		<ctl name="Chargepump Mode" value="VDD" />
 		<ctl name="DNC Max Gain" value="6" />
 	</path>
@@ -588,7 +588,7 @@
 	</path>
 
 	<path name="volte_vt_cp_nb-bt-sco-headset">
-		<path name="incall_nb-bt-sco-headset" />
+		<path name="voice-bt-sco-headset" />
 	</path>
 
 	<!-- VoLTE CP WB -->
@@ -674,11 +674,11 @@
 
 	<!-- TTY Mode -->
 	<path name="tty_mode-handset">
-		<path name="media-handset" />
+		<path name="earpiece" />
 	</path>
 
 	<path name="tty_mode-headset">
-		<path name="media-headset" />
+		<path name="headphones" />
 	</path>
 
 	<!-- call forwarding output -->
@@ -707,12 +707,12 @@
 
 	<!-- Input stage -->
 	<!-- media input -->
-	<path name="main-mic">
+	<path name="earpiece-mic">
 		<path name="route-ap-rx" />
 		<path name="dev-main-mic" />
 	</path>
 
-	<path name="media-mic">
+	<path name="speaker-mic">
 		<path name="route-ap-rx" />
 		<path name="dev-main-mic" />
 	</path>
@@ -722,16 +722,16 @@
 		<path name="dev-2nd-mic" />
 	</path>
 
-	<path name="media-headset-mic">
+	<path name="headset-mic">
 		<path name="route-ap-rx" />
 		<path name="dev-headset-mic" />
 	</path>
 
 	<path name="media-headphone-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
-	<path name="media-bt-sco-headset-in">
+	<path name="bt-sco-mic">
 		<path name="route-ap-bt" />
 		<path name="dev-bt-mic" />
 	</path>
@@ -743,7 +743,7 @@
 	</path>
 
 	<path name="camcorder-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="camcorder-headphone-mic">
@@ -752,15 +752,15 @@
 
 	<!-- voice input -->
 	<path name="recording-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="recording-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="recording-headphone-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<!-- interview input -->
@@ -788,45 +788,45 @@
 
 	<!-- recognition input -->
 	<path name="recognition-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="recognition-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="recognition-headphone-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="recognition-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<!-- bargein samsung input -->
 	<path name="bargein_samsung_engine-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="bargein_samsung_engine-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="bargein_samsung_engine-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<!-- bargein external input -->
 	<path name="bargein_external_engine-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="bargein_external_engine-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="bargein_external_engine-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<!-- svoice/carmode samsung input -->
@@ -836,11 +836,11 @@
 	</path>
 
 	<path name="dualmic_samsung_engine-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="dualmic_samsung_engine-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<!-- svoice/carmode external input -->
@@ -860,7 +860,7 @@
 	<!-- TODO: Need clarificatoin regarding whether AP or CP is active
 		during "communication" scenario -->
 	<path name="communication-handset-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="communication-speaker-mic">
@@ -869,15 +869,15 @@
 	</path>
 
 	<path name="communication-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="communication-headphone-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="communication-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<path name="samsung_voip-handset-mic">
@@ -924,7 +924,7 @@
 
 	<!-- Video call input -->
 	<path name="video_call-handset-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="video_call-speaker-mic">
@@ -932,21 +932,21 @@
 	</path>
 
 	<path name="video_call-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="video_call-headphone-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="video_call-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<!-- VoLTE AP input -->
 	<!-- VoLTE AP NB -->
 	<path name="volte_vt_ap_nb-handset-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="volte_vt_ap_nb-speaker-mic">
@@ -954,20 +954,20 @@
 	</path>
 
 	<path name="volte_vt_ap_nb-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="volte_vt_ap_nb-headphone-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="volte_vt_ap_nb-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<!-- VoLTE AP WB -->
 	<path name="volte_vt_ap_wb-handset-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="volte_vt_ap_wb-speaker-mic">
@@ -975,15 +975,15 @@
 	</path>
 
 	<path name="volte_vt_ap_wb-headset-mic">
-		<path name="media-headset-mic" />
+		<path name="headset-mic" />
 	</path>
 
 	<path name="volte_vt_ap_wb-headphone-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="volte_vt_ap_wb-bt-sco-headset-in">
-		<path name="media-bt-sco-headset-in" />
+		<path name="bt-sco-mic" />
 	</path>
 
 	<!-- CP Call input -->
@@ -1249,7 +1249,7 @@
 
 	<!-- echo(rms) test input -->
 	<path name="echo_test-mic">
-		<path name="media-mic" />
+		<path name="speaker-mic" />
 	</path>
 
 	<path name="echo_test-2nd-mic">
@@ -2945,27 +2945,27 @@
 
 	<!-- Output -->
 	<path name="earpiece">
-		<path name="media-handset"/>
+		<path name="earpiece"/>
 		<path name="gain-media-handset"/>
 	</path>
 
 	<path name="speaker">
-		<path name="media-speaker"/>
+		<path name="speaker"/>
 		<path name="gain-media-speaker"/>
 	</path>
 
 	<path name="headphones">
-		<path name="media-headset"/>
+		<path name="headphones"/>
 		<path name="gain-media-headset"/>
 	</path>
 
 	<path name="speaker-and-headphones">
-		<path name="media-speaker-headset"/>
+		<path name="speaker-and-headphones"/>
 		<path name="gain-media-speaker-headset"/>
 	</path>
 
 	<path name="voice-earpiece">
-		<path name="incall_nb-handset"/>
+		<path name="voice-earpiece"/>
 		<path name="gain-incall_nb-handset"/>
 	</path>
 
@@ -2975,7 +2975,7 @@
 	</path>
 
 	<path name="voice-speaker">
-		<path name="incall_nb-speaker"/>
+		<path name="voice-speaker"/>
 		<path name="gain-incall_nb-speaker"/>
 	</path>
 
@@ -2985,7 +2985,7 @@
 	</path>
 
 	<path name="voice-headphones">
-		<path name="incall_nb-headset"/>
+		<path name="voice-headphones"/>
 		<path name="gain-incall_nb-headset"/>
 	</path>
 
@@ -2995,7 +2995,7 @@
 	</path>
 
 	<path name="voice-bt-sco-headset">
-		<path name="incall_nb-bt-sco-headset"/>
+		<path name="voice-bt-sco-headset"/>
 		<path name="gain-incall_nb-bt-sco-headset"/>
 	</path>
 
@@ -3005,7 +3005,7 @@
 	</path>
 
 	<path name="bt-sco-headset">
-		<path name="media-bt-sco-headset"/>
+		<path name="bt-sco-headset"/>
 		<path name="gain-media-bt-sco-headset"/>
 	</path>
 
@@ -3019,17 +3019,17 @@
 
 	<!-- Input -->
 	<path name="earpiece-mic">
-		<path name="media-mic"/>
+		<path name="speaker-mic"/>
 		<path name="gain-media-mic"/>
 	</path>
 
 	<path name="speaker-mic">
-		<path name="media-mic"/>
+		<path name="speaker-mic"/>
 		<path name="gain-media-mic"/>
 	</path>
 
 	<path name="headset-mic">
-		<path name="media-headset-mic"/>
+		<path name="headset-mic"/>
 		<path name="gain-media-headset-mic"/>
 	</path>
 
@@ -3079,7 +3079,7 @@
 	</path>
 
 	<path name="bt-sco-mic">
-		<path name="media-bt-sco-headset-in"/>
+		<path name="bt-sco-mic"/>
 		<path name="gain-media-bt-sco-headset-in"/>
 	</path>
 
