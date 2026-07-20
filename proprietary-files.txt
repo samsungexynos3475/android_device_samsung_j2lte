@@ -8,9 +8,6 @@ lib/libexynoscameraexternal.so:vendor/lib/libexynoscameraexternal.so
 vendor/firmware/fimc_is_fd.bin
 vendor/firmware/fimc_is_lib_isp.bin
 
-# CPboot Daemon
-vendor/bin/cbd
-
 # Exynos Media Format Codec firmware
 vendor/firmware/mfc_fw.bin
 
