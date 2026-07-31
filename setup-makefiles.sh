@@ -39,7 +39,7 @@ source "${HELPER}"
 setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}"
 
 # Copyright headers and guards
-write_headers "j2lte"
+write_headers "j2lte,j2ltedd,j2ltedx,j2ltedtvvj,j2ltejv,j2lteub,j2ltezt"
 
 # The standard blobs
 write_makefiles "${MY_DIR}/proprietary-files.txt" true

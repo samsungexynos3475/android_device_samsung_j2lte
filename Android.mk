@@ -16,7 +16,7 @@
 
 LOCAL_PATH := device/samsung/j2lte
 
-ifneq ($(filter j2lte,$(TARGET_DEVICE)),)
+ifneq ($(filter j2lte,j2ltedd,j2ltedx,j2ltedtvvj,j2ltejv,j2lteub,j2ltezt,$(TARGET_DEVICE)),)
 
   subdir_makefiles=$(call first-makefiles-under,$(LOCAL_PATH))
   $(foreach mk,$(subdir_makefiles),$(info including $(mk) ...)$(eval include $(mk)))
