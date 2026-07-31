@@ -27,14 +27,14 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := lineage_j2lte
 PRODUCT_DEVICE := j2lte
-PRODUCT_MODEL := SM-J200F
+PRODUCT_MODEL := SM-J200GU
 PRODUCT_BRAND := samsung
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_NAME=j2ltejv \
-    PRIVATE_BUILD_DESC="j2ltejv-user 5.1.1 LMY47X J200FXXS3ARI1 release-keys"
+    PRODUCT_NAME=j2ltedx \
+    TARGET_DEVICE=j2lte \
+    PRIVATE_BUILD_DESC="j2ltedx-user 5.1.1 LMY47X J200GUDXU3AQL1 release-keys"
 
-BUILD_FINGERPRINT := samsung/j2ltejv/j2lte:5.1.1/LMY47X/J200FXXS3ARI1:user/release-keys
-
+BUILD_FINGERPRINT := samsung/j2ltedx/j2lte:5.1.1/LMY47X/J200GUDXU3AQL1:user/release-keys
