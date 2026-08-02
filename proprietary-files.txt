@@ -2,14 +2,10 @@
 
 # Camera
 lib/hw/camera.exynos3.so:vendor/lib/hw/camera.vendor.exynos5.so
-lib/libexynoscameraexternal.so:vendor/lib/libexynoscameraexternal.so
 
 # Camera Firmware
 vendor/firmware/fimc_is_fd.bin
 vendor/firmware/fimc_is_lib_isp.bin
-
-# Exynos Media Format Codec firmware
-vendor/firmware/mfc_fw.bin
 
 # Sensors HAL
 lib/hw/sensors.universal3475.so:vendor/lib/hw/sensors.universal3475.so
