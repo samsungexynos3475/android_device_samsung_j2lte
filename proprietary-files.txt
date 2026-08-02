@@ -3,9 +3,5 @@
 # Camera
 lib/hw/camera.exynos3.so:vendor/lib/hw/camera.vendor.exynos5.so
 
-# Camera Firmware
-vendor/firmware/fimc_is_fd.bin
-vendor/firmware/fimc_is_lib_isp.bin
-
 # Sensors HAL
 lib/hw/sensors.universal3475.so:vendor/lib/hw/sensors.universal3475.so
