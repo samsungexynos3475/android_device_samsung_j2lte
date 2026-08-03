@@ -67,4 +67,7 @@ extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTIO
 # Fix proprietary blobs
 BLOB_ROOT="$LINEAGE_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
 
+# Binary patch camera.exynos3 blob to bypass ABI mismatch on initialization
+printf '\x11\xE0' | dd of="${BLOB_ROOT}/vendor/lib/hw/camera.vendor.exynos5.so" bs=1 seek=$((0x1a30)) count=2 conv=notrunc
+
 "${MY_DIR}/setup-makefiles.sh"
